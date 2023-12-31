@@ -21,7 +21,7 @@ LangChain 🦜🔗 (a framework to develop applications on LLMs):
 * Reliable
 * Text-to-SQL query VS Text-to-SQL query and execution VS SQL Agent
 			
-Streamlit ![Streamlit Logo](streamlit_logo.png):
+![Streamlit Logo](/images/streamlit_logo.png):
 * Open-source
 * Great documentation
 * Community support
@@ -31,7 +31,7 @@ Streamlit ![Streamlit Logo](streamlit_logo.png):
 * Deployment
 * LLM and ML support
 			
-Gradio ![Gradio Logo](gradio_logo.png):
+![Gradio Logo](images/gradio_logo.png):
 * A good alternative that shared most of Streamlit's pros.
 * A suitable a good substitute.
 * I personally like streamlit and since it was recently acquired by SnowFlake, believe in its potential to grow much faster. Yet, both are great options.
@@ -39,13 +39,13 @@ Gradio ![Gradio Logo](gradio_logo.png):
 ### Models & Algorithms
 * Used: model='gpt-3.5-turbo-1106'
 			
-OpenAI ![OpenAI Logo](openai_logo.png):
+![openai_logo](images/openai_logo.png):
 * Seamless connection with LangChain
 * Best performing model in the market
 * Regularly updated offering continuous improvements
 * Hallucinations
 			
-Alternatives: Open-source LLMs (pros & cons) 🦙:
+Alternatives: Open-source LLMs 🦙 (pros & cons):
 * A plethora of fine-tuned open-source models for sql-generation
 * Much more cost-effective
 * Docker
@@ -54,7 +54,7 @@ Alternatives: Open-source LLMs (pros & cons) 🦙:
 * The above is a valid choice, yet it means waiving the main advantages of the SQL Agent.
   Namely, recovering from errors + Answering questions based on the databases’ schema as well as on the databases’ content.  
  
-### Database: PostgreSQL
+### Database: ![postgres_logo](images/postgresql_logo.png)
 * Open-source and free
 * Good support and documentation
 * Reliable
