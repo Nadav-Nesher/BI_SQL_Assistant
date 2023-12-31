@@ -7,6 +7,12 @@ The application takes a user input (question related to or inquiry about the DB)
 
 ![LangChain SQL Agent](images/langchain_sql_agent.png)
 
+# IMPORTANT:
+To view this Streamlit app on a browser, run it with the following command:
+
+    streamlit run PATH\main.py [ARGUMENTS]
+
+
 # Part I - Proposed Solution
 ## Description of High-Level Architecture
 ### Frameworks: LangChain alongside OpenAI's GPT (NLP) + Streamlit (front-end)
