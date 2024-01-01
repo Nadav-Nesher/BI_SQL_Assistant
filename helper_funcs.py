@@ -35,7 +35,8 @@ def employ_langchain_sql_agent(user_input: str,
         llm=llm,
         toolkit=toolkit,
         verbose=True,
-        agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION
+        agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+        handle_parsing_errors=True
     )
     llm_result = agent_executor.run(user_input)
 
