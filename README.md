@@ -12,7 +12,7 @@ To view this Streamlit app on a browser, run it with the following command:
 
     streamlit run PATH\main.py [ARGUMENTS]
 
-This code connects to the DB using `postgres`. To connect to a different DB, please replace the connector to your SQL engine of choice. The rest of the code should work just as fine 👍🏼.
+This code connects to the DB using `postgres`. To connect to a different DB, please replace the connector to your SQL engine of choice (the `pg_uri` variable in the 'helper_funcs.py' module). The rest of the code should work just as fine 👍🏼.
 
 # Part I - Proposed Solution
 ## Description of High-Level Architecture
