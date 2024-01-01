@@ -93,7 +93,7 @@ This code connects to the DB using `postgres`. To connect to a different DB, ple
       `title.akas.tsv` (`types` and `attribuites` columns)
       and `title.basics.tsv` (`genres` column)
 
-* Import the preprocessed TSV files into the newly created tables
+* Import the preprocess TSV files into the newly created tables
   * Exceptionally large files should be broken into smaller files and uploaded sequentially in batches.
   * Write errors to file and inspect `error_file.txt` to further handle any problematic records.
   * Insert inconvertible values as null (mark the tick-box in the 'Data Import' dialogue box)
