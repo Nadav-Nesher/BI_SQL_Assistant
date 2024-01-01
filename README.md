@@ -121,4 +121,4 @@ User prompt > LangChain employs a SQL Agent to handle the back-and-forth deliber
 * Set params in `secret.py` to environment variables
 * Integrate a chatbot to interact with the user, accept secret params and set them accordingly in the virtual environment to establish a live connection to the database.
 
-[Add example_queries.pdf](docs/example_queries.pdf)
+[example_queries.pdf](docs/example_queries.pdf)
