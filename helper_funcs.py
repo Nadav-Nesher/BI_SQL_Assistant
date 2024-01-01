@@ -4,7 +4,10 @@ from langchain.agents import create_sql_agent
 from langchain.agents.agent_types import AgentType
 from langchain.llms import OpenAI
 
-from secret import pg_uri, OPENAI_API_KEY
+from secret import OPENAI_API_KEY, db_user, db_password, db_host, port, db_name
+
+
+pg_uri = f"postgresql+psycopg2://{db_user}:{db_password}@{db_host}:{port}/{db_name}"
 
 
 def employ_langchain_sql_agent(user_input: str,
