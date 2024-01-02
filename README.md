@@ -3,7 +3,7 @@
 ## 🦜🔗 LangChain SQL BI Assistant for IMDB
 An LLM-based application that communicates with a DB to extract information.
 
-The application takes a user input (question related to or inquiry about the DB) in natural language --> convert to SQL query --> query the DB --> return result to LLM --> final output to user
+The application takes a user input (question related to or inquiry about the DB) in natural language > [converts to SQL query > queries the DB > returns result to LLM] (iteratively until the LLM is satisfied) > returns final output to user
 
 ![LangChain SQL Agent](images/langchain_sql_agent.png)
 
