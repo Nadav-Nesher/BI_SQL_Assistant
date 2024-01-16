@@ -14,7 +14,6 @@ To view this Streamlit app on a browser, run it with the following command:
 
 This code connects to the DB using `postgres`. To connect to a different DB, please replace the _type_ of DB and _adapter_ to match your SQL engine of choice (in the `pg_uri` variable in the 'helper_funcs.py' module). The rest of the code should work just as fine 👍🏼.
 
-# Part I - Proposed Solution
 ## Description of High-Level Architecture
 ### Frameworks: LangChain alongside OpenAI's GPT (NLP) + Streamlit (front-end)
 **LangChain 🦜🔗 (a framework to develop applications on LLMs):**
