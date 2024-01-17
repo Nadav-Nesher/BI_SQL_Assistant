@@ -6,14 +6,19 @@ from langchain.agents import create_sql_agent
 from langchain.agents.agent_types import AgentType
 from langchain.llms import OpenAI
 
-from secret import db_user, db_password, db_host, port, db_name
 
 # Retrieve OpenAI API key from environment variables
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
+# Retrieve DB connection variables from environment variables
+db_user = os.getenv("DB_USER")
+db_password = os.getenv("DB_PASSWORD")
+db_host = os.getenv("DB_HOST")
+db_port = os.getenv("DB_PORT")
+db_name = os.getenv("DB_NAME")
 
-pg_uri = f"postgresql+psycopg2://{db_user}:{db_password}@{db_host}:{port}/{db_name}"
+pg_uri = f"postgresql+psycopg2://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
 
 
 def employ_langchain_sql_agent(user_input: str,
