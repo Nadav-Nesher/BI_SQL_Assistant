@@ -16,7 +16,7 @@ def create_streamlit_frontend():
     tab_titles = ['Result', 'ERD Diagram']
     tabs = st.tabs(tab_titles)
 
-    erd_image = Image.open("imdb_database_ERD.png")
+    erd_image = Image.open("images/imdb_database_ERD.png")
     with tabs[1]:
         st.image(erd_image)
 
