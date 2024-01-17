@@ -1,10 +1,16 @@
+import os
+from dotenv import load_dotenv
 from langchain.utilities import SQLDatabase
 from langchain.agents.agent_toolkits import SQLDatabaseToolkit
 from langchain.agents import create_sql_agent
 from langchain.agents.agent_types import AgentType
 from langchain.llms import OpenAI
 
-from secret import OPENAI_API_KEY, db_user, db_password, db_host, port, db_name
+from secret import db_user, db_password, db_host, port, db_name
+
+# Retrieve OpenAI API key from environment variables
+load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
 pg_uri = f"postgresql+psycopg2://{db_user}:{db_password}@{db_host}:{port}/{db_name}"
