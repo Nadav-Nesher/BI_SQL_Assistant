@@ -7,12 +7,27 @@ The application takes a user input (question related to or inquiry about the DB)
 
 ![LangChain SQL Agent](images/langchain_sql_agent.png)
 
-# IMPORTANT:
+# Instructions:
 To view this Streamlit app on a browser, run it with the following command:
 
     streamlit run PATH\main.py [ARGUMENTS]
 
-This code connects to the DB using `postgres`. To connect to a different DB, please replace the _type_ of DB and _adapter_ to match your SQL engine of choice (in the `pg_uri` variable in the 'helper_funcs.py' module). The rest of the code should work just as fine 👍🏼.
+* **Note:** This code connects to the DB using `postgres`. To connect to a different DB, please replace the _type_ of DB and _adapter_ to match your SQL engine of choice (in the `pg_uri` variable in the 'helper_funcs.py' module). The rest of the code should work just as fine 👍🏼.
+
+**Additional notes:**
+Make sure to create a `.env` file for storing your OpenAI api key and db-connection variables.
+
+**Use the following format:**
+* `OPENAI_API_KEY = "your_openai_api_key"`
+* `DB_USER = "your_db_user"`
+* `DB_PASSWORD = "your_db_password"`
+* `DB_HOST = "your_db_host"`
+* `DB_PORT = int`
+* `DB_NAME = "your_db_name"`
+
+
+
+
 
 ## Description of High-Level Architecture
 ### Frameworks: LangChain alongside OpenAI's GPT (NLP) + Streamlit (front-end)
